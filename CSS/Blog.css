@@ -1,30 +1,27 @@
-html{
+html {
     font-size: 20px;
 }
 
-body{
+body {
     background-color: #fee1dd;
     padding: 2%;
     margin: 0;
 }
 
-
-/* titlu */
-header>h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-    font-weight: 900;
-    text-align: center;    
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* meniu */
-nav{
+nav {
     position: sticky;
-    top:0;
+    top: 0;
     background-color: #fee1dd;
     border-radius: 8px;
 }
-nav>ul{
+
+nav > ul {
     display: flex;
     list-style-type: none;
     padding: 0;
@@ -32,70 +29,74 @@ nav>ul{
     height: 50px;
 }
 
-nav li
-{
+nav li {
     line-height: 50px;
-    flex:1;
+    flex: 1;
     font-size: 15px;
     position: relative;
-    z-index:1;
+    z-index: 1;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
 }
-nav a{
+
+nav a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.animation{
+.animation {
     position: absolute;
     height: 100%;
-    top:0;
+    top: 0;
     z-index: 0;
     transition: all .5s ease 0s;
     border-radius: 8px;
 }
 
-nav .start-despre, li:nth-child(1):hover~.animation {
+nav .start-despre,
+li:nth-child(1):hover ~ .animation {
     width: 25%;
     left: 0;
     background-color: #f5bcba;
 }
-nav .start-portofoliu, li:nth-child(2):hover~.animation {
+
+nav .start-portofoliu,
+li:nth-child(2):hover ~ .animation {
     width: 25%;
     left: 25%;
     background-color: #e3aadd;
 }
-nav .start-blog, li:nth-child(3):hover~.animation {
+
+nav .start-blog,
+li:nth-child(3):hover ~ .animation {
     width: 25%;
     left: 50%;
-    background-color: #c8a8e9;    
+    background-color: #c8a8e9;
 }
-nav .start-contact, li:nth-child(4):hover~.animation {
+
+nav .start-contact,
+li:nth-child(4):hover ~ .animation {
     width: 25%;
     left: 75%;
     background-color: #c3c7f3;
-    
 }
 
-/* submeniu */
-nav>ul.meniu>li>ul.submeniu
-{
+nav > ul.meniu > li > ul.submeniu {
     visibility: hidden;
     position: relative;
     width: 100%;
 }
-nav>ul.meniu>li:hover>ul.submeniu
-{
+
+nav > ul.meniu > li:hover > ul.submeniu {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-nav>ul.meniu>li:hover>ul.submeniu>li
-{
+
+nav > ul.meniu > li:hover > ul.submeniu > li {
     position: relative;
     visibility: visible;
     text-align: center;
@@ -103,26 +104,26 @@ nav>ul.meniu>li:hover>ul.submeniu>li
     line-height: 50px;
     flex: 1;
     font-size: 15px;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 8px;
     transition: all .5s ease 0s;
 }
 
-nav>ul.meniu>li:hover>ul.submeniu>li:hover
-{
+nav > ul.meniu > li:hover > ul.submeniu > li:hover {
     background-color: #bd7aff;
 }
-
 
 @font-face {
     font-family: MittaSweety;
     src: url("../MittaSweety.ttf");
 }
-h2{
+
+h2 {
     font-family: MittaSweety;
     font-size: 8vh;
     color: #535878;
 }
+
 #povesti div:hover{
     transform: scale(1, 1);
 }
@@ -137,8 +138,14 @@ h2{
     font-family: Marhiel;
     src: url("../Marhiel.otf");
 }
+h2{
+    width: 70%;
+}
 #povesti{
     width: 70%;
+    @media only screen and (max-width: 720px){
+        width: 50%;
+    }
 }
 #povesti div{
     margin: 5px;
@@ -168,3 +175,13 @@ h2{
     background-image: url("../Imagini/Articol2.jpg");
     background-size: cover;
 }
+
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#povesti {
+    width: 60%;
+}
+

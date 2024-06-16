@@ -175,5 +175,45 @@ nav>ul.meniu>li:hover>ul.submeniu>li:hover
     justify-self: center;
 }
 
+@media only screen and (max-width: 720px){
+    #poze{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    #poze img:nth-child(11) {
+        grid-column: 2 / span 1;
+        grid-row: auto;
+    }
 
+    #poze img:nth-child(12),
+    #poze img:nth-child(13) {
+        grid-column: auto;
+        grid-row: auto;
+    }
 
+    #poze img:last-child {
+        grid-column: 2;
+    }
+}
+
+#filter{
+    margin: 10px;
+    border-radius: 5%;
+    outline: none;
+    
+    
+}
+
+#selectFilter {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    background-color: #fee1dd;
+    font-family: MittaSweety;
+    font-size: 200%;
+}
+
+#selectFilter:hover {
+    /* Change the background color and text color on hover */
+    background-color: #fee1dd;
+    color: #fd9b8e;
+}

@@ -1,13 +1,20 @@
 html{
-    font-size: 20px;
+    height: 100%;
 }
 
 body{
     background-color: #fee1dd;
     padding: 2%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+/* Container for the content */
+.container {
+    flex: 1;
+}
 
 /* titlu */
 header>h1{
@@ -168,7 +175,7 @@ nav>ul.meniu>li:hover>ul.submeniu>li:hover
     background: #d4def5;
     border: 1px solid #CDD9ED;
     font-weight: bold;
-    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
   
   .input-container:focus-within > span {
@@ -229,8 +236,6 @@ nav>ul.meniu>li:hover>ul.submeniu>li:hover
     transform: scale(1.1)  rotate(-2deg) ;
 }
 
-
-
 /* buton colorat */
 #spre_blog{
     margin-top: 10px;
@@ -243,14 +248,19 @@ nav>ul.meniu>li:hover>ul.submeniu>li:hover
     background-color: #c3c7f3;
     border: 1.5px solid #7883fe;
     border-radius: 25px;
-    box-shadow: #c68aff 0 8px 16px;
-    color: purple;
-    padding: 7px 20px;
-    text-align: center;
-    font-size: 20px;
-    font-family: Marhiel;
-    transition: transform 0.3s ease;
 }
-.about:hover{
-    transform: scale(1.1)  rotate(-2deg) ;
+
+@font-face {
+    font-family: MittaSweety;
+    src: url("../MittaSweety.ttf");
+}
+footer{
+    background-color: #fee1dd; 
+    width: 100vw;
+    text-align: center;
+    font-family: MittaSweety;
+    height: 20%;
+}
+footer h3{
+    font-size: 150%;
 }

@@ -1,0 +1,38 @@
+[
+	{
+        "categorie":"Toate",
+		"carti":["BlueDragon.jpg",
+        "Cloud.jpg",
+        "Daisy.jpg",
+        "Elephant.jpg",
+        "MoodAndStarBookmark.jpg",
+        "Mushroom_bookmark.jpg",
+        "OrangeHeart.jpg",
+        "Owl.jpg",
+        "Paddington.jpg",
+        "Seal.jpg",
+        "Sunflower.jpg",
+        "Turtle.jpg",
+        "TwoRedHearts.jpg"]
+    },
+    
+    {       
+		"categorie":"Plush",
+		"carti":["BlueDragon.jpg","Owl.jpg","Paddington.jpg", "Seal.jpg", "Turtle.jpg"]
+	},
+	
+	{       
+		"categorie":"Semne de carte",
+		"carti":["MoodAndStarBookmark.jpg","Mushroom_bookmark.jpg"]
+	},
+	{       
+		"categorie":"Brose",
+		"carti":["Cloud.jpg",
+        "Daisy.jpg",
+        "Elephant.jpg",
+        "OrangeHeart.jpg",
+        "Sunflower.jpg",
+        "TwoRedHearts.jpg"]
+	}
+	
+]

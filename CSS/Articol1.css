@@ -128,3 +128,25 @@ nav>ul.meniu>li:hover>ul.submeniu>li:hover
     font-family: MittaSweety;
     font-size: 8vw;
 }
+
+#articol1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5%;
+}
+p{
+    font-family: Marhiel;
+    font-size: 100%;
+}
+/* Adaugă aceste stiluri la fișierul CSS existent */
+
+#articol1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#articol1 > * {
+    grid-column: span 1;
+}
